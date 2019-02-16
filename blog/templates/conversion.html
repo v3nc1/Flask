@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container">
+      <h1 >Exchange rate</h1>
+      <div class="container">
+        <form class="" action="">
+
+
+            <div class="form-group">
+                {{ form.val1.label(class='form-control-label') }}
+                <select id="val1">
+                  <optgroup label="Currancy">
+                    <option>Euro</option>
+                    <option>Kuna</option>
+                    <option>USDollar</option>
+                    <option>GBPounds</option>
+                    <option>CHFunta</option>
+
+                  </optgroup>
+                </select>
+                {{ form.val1(class='form-control form-control-lg') }}
+            </div>
+
+
+              <div class="form-group">
+                 
+                  <select id="val1">
+                    <optgroup label="Currancy">
+                      <option>Euro</option>
+                      <option>Kuna</option>
+                      <option>USDollar</option>
+                      <option>GBPounds</option>
+                      <option>CHFunta</option>
+
+                    </optgroup>
+                  </select>
+                  
+                  <h1>{{ value }}</h1>
+              </div>
+
+          <div class="form-group">
+              {{ form.submit(class='btn btn-outline-info' )}}
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+{% endblock content %}
